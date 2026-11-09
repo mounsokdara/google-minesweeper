@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Minesweeper</title>
+  
+  <defs>
+    <clipPath id="sky"><rect x="72" y="72" width="368" height="368" rx="62"/></clipPath>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="124" fill="#ff7b5c"/>
+  <rect x="46" y="46" width="420" height="420" rx="96" fill="#ffb700"/>
+  <rect x="72" y="72" width="368" height="368" rx="62" fill="#90e0f4"/>
+  <g clip-path="url(#sky)">
+    <path d="M72 215 Q110 190 150 205 Q175 215 200 232 Q240 250 290 240 Q330 232 345 262 Q352 300 335 352 L72 352 Z" fill="#d3f1f8"/>
+    <path d="M300 118 Q330 98 360 112 Q380 100 405 112 L440 112 L440 138 L300 138 Z" fill="#c4ebf6"/>
+
+    <g>
+      <rect x="222" y="200" width="16" height="146" rx="3" fill="#eb5e3f"/>
+      <rect x="216" y="338" width="28" height="14" rx="4" fill="#eb5e3f"/>
+      <path d="M238 206 L348 247 L238 290 Z" fill="#ff6b48"/>
+    </g>
+    <path d="M72 352 H440 V440 H72 Z" fill="#009879"/>
+  </g>
+</svg>
