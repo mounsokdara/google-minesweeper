@@ -1,0 +1,298 @@
+:root{--EpFNW:#fff}
+/* Google loading circle - copied from the Snake game (css/inline/material-theme-colors.css) */
+.VDgVie {
+  text-align: center;
+}
+.jbBItf {
+  display: block;
+  position: relative;
+}
+.DU0NJ {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.lP3Jof {
+  display: inline-block;
+  position: relative;
+}
+.nNMuOd {
+  -webkit-animation: qli-container-rotate 1568.2352941176ms linear infinite;
+  animation: qli-container-rotate 1568.2352941176ms linear infinite;
+}
+.RoKmhb {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.nNMuOd .VQdeab {
+  -webkit-animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.nNMuOd .IEqiAf {
+  -webkit-animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.nNMuOd .smocse {
+  -webkit-animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.nNMuOd .FlKbCe {
+  -webkit-animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation:
+    qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    qli-green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.BSnLb .nNMuOd .RoKmhb {
+  -webkit-animation: qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: qli-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  opacity: 0.99;
+}
+.beDQP {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+.FcXfi {
+  box-sizing: border-box;
+  height: 100%;
+  left: 45%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 10%;
+}
+.SPKFmc {
+  border-radius: 50%;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+.x3SdXd {
+  width: 200%;
+}
+.J7uuUe {
+  -webkit-transform: rotate(129deg);
+  transform: rotate(129deg);
+}
+.sDPIC {
+  left: -100%;
+  -webkit-transform: rotate(-129deg);
+  transform: rotate(-129deg);
+}
+.tS3P5 {
+  left: -450%;
+  width: 1000%;
+}
+.VQdeab .SPKFmc {
+  border-color: #4285f4;
+}
+.IEqiAf .SPKFmc {
+  border-color: #ea4335;
+}
+.smocse .SPKFmc {
+  border-color: #fbbc04;
+}
+.FlKbCe .SPKFmc {
+  border-color: #34a853;
+}
+.RoKmhb .J7uuUe {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.RoKmhb .sDPIC {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.RoKmhb .tS3P5 {
+  border-bottom-color: transparent;
+}
+.GgTJWe .nNMuOd .J7uuUe {
+  -webkit-animation: qli-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: qli-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.GgTJWe .nNMuOd .sDPIC {
+  -webkit-animation: qli-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: qli-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.BSnLb .nNMuOd .J7uuUe {
+  -webkit-animation: qli-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: qli-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  border-left-color: var(--EpFNW);
+  border-top-color: var(--EpFNW);
+}
+.BSnLb .nNMuOd .sDPIC {
+  -webkit-animation: qli-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: qli-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  border-right-color: var(--EpFNW);
+  border-top-color: var(--EpFNW);
+}
+.BSnLb .nNMuOd .tS3P5 {
+  border-color: var(--EpFNW);
+  border-bottom-color: transparent;
+}
+@keyframes qli-container-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@keyframes qli-fill-unfill-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  12.5% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  25% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(405deg);
+    transform: rotate(405deg);
+  }
+  50% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+  }
+  62.5% {
+    -webkit-transform: rotate(675deg);
+    transform: rotate(675deg);
+  }
+  75% {
+    -webkit-transform: rotate(810deg);
+    transform: rotate(810deg);
+  }
+  87.5% {
+    -webkit-transform: rotate(945deg);
+    transform: rotate(945deg);
+  }
+  to {
+    -webkit-transform: rotate(3turn);
+    transform: rotate(3turn);
+  }
+}
+@keyframes qli-left-spin {
+  0% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+  }
+}
+@keyframes qli-right-spin {
+  0% {
+    -webkit-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+  }
+}
+@keyframes qli-blue-fade-in-out {
+  0% {
+    opacity: 0.99;
+  }
+  25% {
+    opacity: 0.99;
+  }
+  26% {
+    opacity: 0;
+  }
+  89% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 0.99;
+  }
+}
+@keyframes qli-red-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.99;
+  }
+  50% {
+    opacity: 0.99;
+  }
+  51% {
+    opacity: 0;
+  }
+}
+@keyframes qli-yellow-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.99;
+  }
+  75% {
+    opacity: 0.99;
+  }
+  76% {
+    opacity: 0;
+  }
+}
+@keyframes qli-green-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.99;
+  }
+  90% {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 0;
+  }
+}
