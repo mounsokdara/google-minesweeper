@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Minesweeper</title>
+  <defs>
+    <clipPath id="r"><rect width="512" height="512" rx="112"/></clipPath>
+    <radialGradient id="glow" cx="50%" cy="62%" r="45%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#r)">
+    <!-- grass checkerboard -->
+    <rect width="512" height="512" fill="#aad751"/>
+    <rect width="256" height="256" fill="#a2d149"/>
+    <rect x="256" y="256" width="256" height="256" fill="#a2d149"/>
+    <!-- dug-up tile -->
+    <rect x="0" y="464" width="512" height="48" fill="#578a34"/>
+    <!-- glow + mine creature -->
+    <ellipse cx="236" cy="300" rx="200" ry="150" fill="url(#glow)"/>
+    <path d="M84 332 A152 152 0 0 1 388 332 Z" fill="#a1209a"/>
+    <path d="M84 332 A152 152 0 0 1 388 332 Z" fill="none" stroke="#7d1678" stroke-width="6" stroke-linejoin="round"/>
+    <!-- eyes -->
+    <circle cx="190" cy="262" r="42" fill="#fff"/>
+    <circle cx="282" cy="262" r="42" fill="#fff"/>
+    <circle cx="196" cy="268" r="26" fill="#4a1f2a"/>
+    <circle cx="288" cy="268" r="26" fill="#4a1f2a"/>
+    <circle cx="204" cy="258" r="9" fill="#fff"/>
+    <circle cx="296" cy="258" r="9" fill="#fff"/>
+    <!-- brow -->
+    <path d="M146 214 Q190 196 228 222" fill="none" stroke="#7d1678" stroke-width="12" stroke-linecap="round"/>
+    <path d="M326 214 Q282 196 244 222" fill="none" stroke="#7d1678" stroke-width="12" stroke-linecap="round"/>
+    <!-- dirt edge in front of creature -->
+    <rect x="40" y="334" width="432" height="130" rx="10" fill="#c2338f"/>
+    <rect x="40" y="334" width="432" height="130" rx="10" fill="#000" opacity=".1"/>
+    <!-- flag -->
+    <rect x="400" y="62" width="14" height="150" rx="7" fill="#fff3e0"/>
+    <circle cx="407" cy="60" r="12" fill="#f4772e"/>
+    <path d="M414 74 L490 108 L414 142 Z" fill="#e8442e"/>
+    <ellipse cx="407" cy="224" rx="52" ry="20" fill="#d9432a"/>
+    <ellipse cx="407" cy="214" rx="52" ry="20" fill="#f4772e"/>
+  </g>
+</svg>
