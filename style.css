@@ -1,0 +1,66 @@
+*{box-sizing:border-box}
+  html,body{margin:0;padding:0;height:100%;overflow:hidden;
+    -webkit-tap-highlight-color:transparent;overscroll-behavior:none;
+    font-family:Roboto,"Helvetica Neue",Arial,sans-serif}
+  body{display:flex;align-items:center;justify-content:center}
+
+  #game{position:relative;overflow:hidden;background:#578a34;user-select:none;-webkit-user-select:none;
+    transform-origin:center center}
+  #game.mobile{position:fixed;left:0;top:0;width:100%;height:100%;transform:none!important}
+
+  /* ---------- header bar (same metrics as Google's .NWJp1d family) ---------- */
+  #bar{position:relative;width:100%;height:60px;background:#4a752c;user-select:none;-webkit-user-select:none}
+  #centerBox{position:absolute;left:0;top:0;width:100%;height:60px}
+  #stats{align-items:center;justify-content:center;display:flex;position:relative;height:60px;width:32%;min-width:136px;margin:auto}
+  .ico{width:38px;height:auto;pointer-events:none}
+  .num{font-family:Roboto,"Helvetica Neue",Arial,sans-serif;color:#fff;width:30px;font-size:16px;height:20px;line-height:20px;position:relative;top:0;display:inline-block}
+  #left{position:absolute;left:16px;top:0;height:60px;z-index:5}
+  #dd{font-family:Roboto,"Helvetica Neue",Arial,sans-serif;height:60px;position:relative;display:inline-block}
+  #ddbtn{font-size:15px;font-weight:bold;color:#303030;background:#fff;line-height:30px;border-radius:5px;
+    position:relative;top:15px;cursor:pointer;display:flex;align-items:flex-start;outline:none}
+  #ddbtn:focus-visible{box-shadow:0 0 0 2px #fff,0 0 0 4px #1a73e8}
+  #ddlabel{margin:0 3px 0 6px}
+  .caret{border-color:#303030 transparent;border-style:solid;border-width:4px 4px 0 4px;display:inline-block;height:0;margin:13px 8px 10px 3px;vertical-align:top;width:0}
+  #ddmenu{display:none;position:absolute;left:0;top:50px;background:#fff;border-radius:8px;min-width:100%;
+    box-shadow:0 2px 10px rgba(0,0,0,.3);padding:5px 0;font-size:15px;font-weight:bold;color:#303030;white-space:nowrap;z-index:20}
+  #ddmenu.open{display:block}
+  .mi{display:block;position:relative;padding:0 16px 0 28px;line-height:48px;cursor:pointer;color:#303030;background:no-repeat left 8px center}
+  .mi:first-of-type{border-top-left-radius:8px;border-top-right-radius:8px}
+  .mi:last-of-type{border-bottom-left-radius:8px;border-bottom-right-radius:8px}
+  .mi:hover,.mi:focus{background-color:rgba(0,0,0,.1);outline:none}
+  .mi[aria-checked="true"]{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z' fill='%23000'/%3E%3C/svg%3E")}
+  #mute{position:absolute;right:12px;top:15px;width:30px;height:30px;padding:0;border:0;background:none;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center}
+  #mute svg{width:30px;height:30px;fill:#fff}
+  #mute:focus-visible{outline:2px solid #fff;border-radius:4px}
+
+  #cv{display:block;width:100%;height:calc(100% - 60px)}
+
+  /* ---------- end-of-game overlay (.Qwh28e / .jTAfu / .HhuoRb) ---------- */
+  #over{position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.7);transition:opacity .3s;opacity:0;visibility:hidden;z-index:10}
+  #overIn{position:relative;top:50%;transform:translateY(-50%)}
+  #card{background:#4dc1f9 center bottom no-repeat;background-size:contain;width:calc(100% - 64px);max-width:300px;height:225px;margin:auto;border-radius:8px;text-align:center;user-select:none}
+  .stat{display:inline-block;margin-top:25px;margin-left:36px;margin-right:36px;text-align:center}
+  .stat img{width:60px;height:auto}
+  .statNum{font:400 28px Roboto,"Helvetica Neue",Arial,sans-serif;color:#fff}
+  #again{background:#4a752c;width:calc(100% - 64px);max-width:300px;height:64px;margin:12px auto;border-radius:8px;border:none;color:#fff;font-size:20px;text-align:center;user-select:none;cursor:pointer}
+  #again img{vertical-align:middle;margin:0 16px 2px 0;width:30px;height:30px}
+  #again h2{font:400 20px Roboto,"Helvetica Neue",Arial,sans-serif;color:#fff;padding:0;margin:0;margin-top:20px;display:inline-block}
+  #again:focus-visible{outline:3px solid #fff}
+  @media only screen and (max-width:330px){.stat{margin-left:5%;margin-right:5%}}
+  @media only screen and (max-width:215px){.stat{margin-left:0;margin-right:0}}
+
+  /* ---------- touch tutorial (.rgF5re) ---------- */
+  #tut{position:absolute;left:0;top:0;width:100%;height:100%;z-index:9;transition:opacity .2s;pointer-events:none;display:none}
+  .tutIcon{width:120px;height:120px;background-size:100px auto;background-repeat:no-repeat;background-position:center;background-color:rgba(0,0,0,.6);border-radius:16px;position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);display:block}
+  #tutDig{animation:dig_crossfade 6s infinite}
+  #tutFlag{animation:flag_crossfade 6s infinite}
+  @keyframes dig_crossfade{0%{opacity:1}40%{opacity:1}50%{opacity:0}90%{opacity:0}100%{opacity:1}}
+  @keyframes flag_crossfade{0%{opacity:0}40%{opacity:0}50%{opacity:1}90%{opacity:1}100%{opacity:0}}
+
+  /* ---------- loading cover ---------- */
+  #loader{position:absolute;left:0;top:0;width:100%;height:100%;background:#578a34;z-index:99;display:flex;align-items:center;justify-content:center}
+  .spin{width:36px;height:36px;border:4px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:sp 1s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+
+  @media only screen and (max-width:350px){.ico{display:none}.num{font-size:25px;line-height:25px;width:45px}#stats{width:25%;min-width:90px}}
+  @media only screen and (max-width:290px){.num{font-size:16px;line-height:16px;width:30px}.caret{display:none}#ddlabel{margin:0 6px}}

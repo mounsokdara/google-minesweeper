@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="google" content="notranslate">
+<title>Minesweeper</title>
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <div id="bar">
+    <div id="centerBox"><div id="stats">
+      <img class="ico" id="icoFlag" alt=""><div class="num" id="flagNum">40</div>
+      <img class="ico" id="icoClock" alt=""><div class="num" id="timeNum">000</div>
+    </div></div>
+    <div id="left">
+      <div id="dd">
+        <div id="ddbtn" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"><span id="ddlabel">Medium</span><span class="caret"></span></div>
+        <div id="ddmenu" role="menu">
+          <div class="mi" role="menuitemradio" tabindex="-1" data-difficulty="EASY" aria-checked="false">Easy</div>
+          <div class="mi" role="menuitemradio" tabindex="-1" data-difficulty="MEDIUM" aria-checked="true">Medium</div>
+          <div class="mi" role="menuitemradio" tabindex="-1" data-difficulty="HARD" aria-checked="false">Hard</div>
+        </div>
+      </div>
+    </div>
+    <button id="mute" aria-label="Mute" title="Mute" type="button"><svg id="muteSvg" viewBox="0 0 24 24" aria-hidden="true"><path id="mutePath" d=""/></svg></button>
+  </div>
+  <canvas id="cv"></canvas>
+  <div id="over" style="opacity:0;visibility:hidden"><div id="overIn">
+    <div id="card">
+      <div class="stat"><img id="ovClock" alt=""><div class="statNum" id="ovTime">0</div></div><div class="stat"><img id="ovTrophy" alt=""><div class="statNum" id="ovBest">0</div></div>
+    </div>
+    <div id="again" role="button" tabindex="0"><img id="ovRefresh" alt=""><h2 id="againTxt">Play again</h2></div>
+  </div></div>
+  <div id="tut"><div class="tutIcon" id="tutDig"></div><div class="tutIcon" id="tutFlag"></div></div>
+  <div id="loader"><div class="spin"></div></div>
+</div>
+<script src="assets.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
